@@ -19,9 +19,13 @@ Para ello, primero tuve que ir al repositorio. En la página del repositorio, tu
 
 ![3](https://github.com/user-attachments/assets/83cdb757-096e-4e6e-ba16-42cbc719dd93)
 
-Una vez ahi, para subir el archivo desde mi equipo, attrastreé y solté el arvhico desde mi equipo y lo subí. 
+Una vez ahi, para subir el archivo desde mi equipo, atrastré y solté el archivo desde mi equipo y lo subí. 
+
+![4](https://github.com/user-attachments/assets/fd44d3d8-508d-49a3-bb6b-7cd84959f839)
 
 Una vez hecho esto, añadí un mensaje de confirmación. 
+
+![5](https://github.com/user-attachments/assets/b8aef0a9-6041-4ab3-be3e-55baa2c9a27a)
 
 En el campo "Commit changes", escribí un mensaje para describir los cambios que estaba haciendo. Y seleccioné la opción "Commit directly to the main branch" para que los cambios se realizaran directamente en la rama principal (main).
 
