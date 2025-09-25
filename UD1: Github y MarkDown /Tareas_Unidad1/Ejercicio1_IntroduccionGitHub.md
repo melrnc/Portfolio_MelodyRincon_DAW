@@ -32,6 +32,10 @@ En el campo "Commit changes", escribí un mensaje para describir los cambios que
 Finalmente, hice clic en "Commit changes" para completar el proceso.
 
 **Paso 3: Cómo ver mis archivos y commits**  
+Una vez he subido mis archivos, aparecerán en el repositorio. Se puede ver el archivo prueba.c y hacer clic sobre él para ver su contenido.
+![6]
+
+Para ver el historial de cambios (como los commits), es necesario hacer clic en la pestaña "Commits" que está justo encima de la lista de archivos. Ahí se ven una lista de todos los commits, junto con los mensajes de commit y quién los realizó.
 
 **Paso 4: Cómo crear y administrar ramas (Branches)**
 
