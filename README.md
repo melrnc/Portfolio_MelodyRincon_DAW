@@ -7,3 +7,13 @@ A continuación se muestra una tabla con los enlaces al diario de trabajo y a la
 | -----------------------------  |
 |[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
 |[Enlaces](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
+
+| Unidad 2                       |                                                                 
+| -----------------------------  |
+|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
+|[Enlaces](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
+
+| Unidad 3                       |                                                                 
+| -----------------------------  |
+|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
+|[Enlaces](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
