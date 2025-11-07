@@ -3,17 +3,17 @@ Este repositorio corresponde al portfolio del módulo Despliegue de Aplicaciones
 
 A continuación se muestra una tabla con los enlaces al diario de trabajo y a las prácticas:
 
-| Unidad 1: GitHub y MarkDown    |                                                                 
-| -----------------------------  |
+| Unidad 1: GitHub y MarkDown|             
+|---|
+|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)|
+|[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md)|
+
+| Unidad 2: Introducción a las Aplicaciones Web|                             
+|---|
 |[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
 |[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
 
-| Unidad 2                       |                                                                 
-| -----------------------------  |
-|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
-|[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
-
-| Unidad 3                       |                                                                 
-| -----------------------------  |
+| Unidad 3: Apache|                                              
+|---|
 |[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
 |[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
