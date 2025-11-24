@@ -66,12 +66,13 @@ Se verificó que ambos contenedores estuvieran activos y en ejecución, y se rea
 | **Servidor de Aplicaciones (Tomcat)** | `http://localhost:8081` | Se accede al servidor Tomcat (muestra el informe de error por falta de recurso, indicando que el servidor está activo). |
 
 **Evidencia de Verificación (`docker ps`):**
+
 ![11](https://github.com/user-attachments/assets/adb15ceb-7467-482f-b38d-20025c065a1c)
 
 **Evidencia de Pruebas de Servidores (Navegador):**
 
 * **Nginx (Webserver):**
-    ![12(https://github.com/user-attachments/assets/0768ad63-18ba-42db-ada4-9ff16457837b)
+    ![12](https://github.com/user-attachments/assets/0768ad63-18ba-42db-ada4-9ff16457837b)
 
 * **Tomcat (Appserver):**
     ![13](https://github.com/user-attachments/assets/a15faebf-fe5f-4a42-b4c5-f92328bffcf7)
@@ -97,6 +98,7 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
 
 
 
