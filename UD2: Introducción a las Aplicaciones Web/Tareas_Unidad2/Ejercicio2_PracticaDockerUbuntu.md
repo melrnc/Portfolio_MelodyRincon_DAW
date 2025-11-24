@@ -20,8 +20,7 @@ Se creó una nueva VM con las siguientes características: `Ubuntu-DAW2DAW`, **4
 
 A continuación, se muestra el escritorio de Ubuntu-DAW2DAW una vez completada la instalación:
 
-![1](<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/58b3df11-8da5-432c-82ee-0cfc115d1570" />
-)
+![1](https://github.com/user-attachments/assets/58b3df11-8da5-432c-82ee-0cfc115d1570)
 
 ### 2. Pasos Seguidos para Instalar Docker Desktop
 
@@ -100,6 +99,7 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
 
 
 
