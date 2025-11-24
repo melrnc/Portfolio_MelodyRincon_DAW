@@ -38,9 +38,7 @@ Los siguientes pasos y comandos se ejecutaron para configurar el repositorio e i
 
 Se verificó la instalación y se ejecutó la imagen de prueba `hello-world` para comprobar que la instalación era correcta:
 
-![Comprobación de la versión de Docker y ejecución de hello-world](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
-
----
+![6](https://github.com/user-attachments/assets/e57b839c-879d-4c33-9fc3-48fc05f241d5)
 
 ### 3. Comandos Usados para Crear y Ejecutar Contenedores
 
@@ -68,15 +66,15 @@ Se verificó que ambos contenedores estuvieran activos y en ejecución, y se rea
 | **Servidor de Aplicaciones (Tomcat)** | `http://localhost:8081` | Se accede al servidor Tomcat (muestra el informe de error por falta de recurso, indicando que el servidor está activo). |
 
 **Evidencia de Verificación (`docker ps`):**
-![Verificación de contenedores activos de Nginx y Tomcat](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
+![11](https://github.com/user-attachments/assets/adb15ceb-7467-482f-b38d-20025c065a1c)
 
 **Evidencia de Pruebas de Servidores (Navegador):**
 
 * **Nginx (Webserver):**
-    ![Comprobación del servidor Nginx desde el navegador en http://localhost:8080](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
+    ![12(https://github.com/user-attachments/assets/0768ad63-18ba-42db-ada4-9ff16457837b)
 
 * **Tomcat (Appserver):**
-    ![Prueba en el navegador del servidor Tomcat en http://localhost:8081](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
+    ![13](https://github.com/user-attachments/assets/a15faebf-fe5f-4a42-b4c5-f92328bffcf7)
 
 ---
 
@@ -99,6 +97,7 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
 
 
 
