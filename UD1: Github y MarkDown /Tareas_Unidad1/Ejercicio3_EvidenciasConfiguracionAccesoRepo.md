@@ -9,7 +9,7 @@ Se ha invitado al colaborador `PabloHuertasCastillo` a través de la sección **
 1.  **Inicio de la Invitación:**
     * Se accedió a la configuración y se pulsó **"Add people"** (Añadir personas).
 
-> **[1]** ![1](![2](https://github.com/user-attachments/assets/cc993047-d2ff-4c7a-b2d3-8dc2dd6811b4))
+> ![1](https://github.com/user-attachments/assets/cc993047-d2ff-4c7a-b2d3-8dc2dd6811b4)
 
 2.  **Aceptación del Colaborador:**
     * El compañero aceptó la invitación, quedando listado en la sección de colaboradores con el rol de Colaborador.
@@ -26,4 +26,5 @@ Debido a las limitaciones de la interfaz en una cuenta personal de GitHub (no Or
 | **Lectura (Read)** | Invitación al Repositorio Privado. | Se considera el acceso de lectura, que es el mínimo necesario para que el compañero pueda ver y clonar el código del repositorio privado. |
 
 | **Administrador (Admin)** | Captura de **Transfer ownership** en Danger Zone. | Este nivel de control total solo se puede simular mediante la transferencia de la propiedad, siendo el Propietario (yo) el único Administrador. | ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/5.JPG) ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/6.JPG)
+
 
