@@ -1,4 +1,4 @@
-# Portfolio de Melody Rincón Abengózar, estudiante de 2ºDAW. Módulo Despliegue Aplicaciones Web
+# Portfolio de Melody Rincón. Módulo Despliegue Aplicaciones Web
 Este repositorio corresponde al portfolio del módulo Despliegue de Aplicaciones Web, realizado por la alumna Melody Rincón Abengózar. Contiene las Unidades Didácticas del módulo, los enlaces a las prácticas de cada unidad y un diario donde se reflejan los aprendizajes, lo más destacado y los aspectos a mejorar de cada actividad.
 
 A continuación se muestra una tabla con los enlaces al diario de trabajo y a las prácticas:
