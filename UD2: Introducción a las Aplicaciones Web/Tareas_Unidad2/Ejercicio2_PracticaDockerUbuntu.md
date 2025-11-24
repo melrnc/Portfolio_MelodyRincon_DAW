@@ -20,7 +20,7 @@ Se creó una nueva VM con las siguientes características: `Ubuntu-DAW2DAW`, **4
 
 A continuación, se muestra el escritorio de Ubuntu-DAW2DAW una vez completada la instalación:
 
-![Escritorio de Ubuntu-DAW2DAW instalado en VirtualBox](1.JPG)
+![Escritorio de Ubuntu-DAW2DAW instalado en VirtualBox](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
 
 ---
 
@@ -40,7 +40,7 @@ Los siguientes pasos y comandos se ejecutaron para configurar el repositorio e i
 
 Se verificó la instalación y se ejecutó la imagen de prueba `hello-world` para comprobar que la instalación era correcta:
 
-![Comprobación de la versión de Docker y ejecución de hello-world](6.png)
+![Comprobación de la versión de Docker y ejecución de hello-world](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
 
 ---
 
@@ -70,15 +70,15 @@ Se verificó que ambos contenedores estuvieran activos y en ejecución, y se rea
 | **Servidor de Aplicaciones (Tomcat)** | `http://localhost:8081` | Se accede al servidor Tomcat (muestra el informe de error por falta de recurso, indicando que el servidor está activo). |
 
 **Evidencia de Verificación (`docker ps`):**
-![Verificación de contenedores activos de Nginx y Tomcat](11.png)
+![Verificación de contenedores activos de Nginx y Tomcat](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
 
 **Evidencia de Pruebas de Servidores (Navegador):**
 
 * **Nginx (Webserver):**
-    ![Comprobación del servidor Nginx desde el navegador en http://localhost:8080](12.png)
+    ![Comprobación del servidor Nginx desde el navegador en http://localhost:8080](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
 
 * **Tomcat (Appserver):**
-    ![Prueba en el navegador del servidor Tomcat en http://localhost:8081](13.png)
+    ![Prueba en el navegador del servidor Tomcat en http://localhost:8081](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2%3A%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/Tareas_Unidad2/Ejercicio2_PracticaDockerUbuntu.md)
 
 ---
 
@@ -101,3 +101,4 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
