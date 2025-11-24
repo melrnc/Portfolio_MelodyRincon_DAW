@@ -9,12 +9,12 @@ Se ha invitado al colaborador `PabloHuertasCastillo` a través de la sección **
 1.  **Inicio de la Invitación:**
     * Se accedió a la configuración y se pulsó **"Add people"** (Añadir personas).
 
-> **[Imagen de Evidencia - Captura de pantalla del paso donde se invita al colaborador.]** ![alt text](2-1.JPG) ![alt text](3-1.JPG)
+> **[Imagen de Evidencia - Captura de pantalla del paso donde se invita al colaborador.]** ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/2.JPG) ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/3.JPG)
 
 2.  **Aceptación del Colaborador:**
     * El compañero aceptó la invitación, quedando listado en la sección de colaboradores con el rol de Colaborador.
 
-> **[Imagen de Evidencia - Captura de pantalla de "Manage access" mostrando a PabloHuertasCastillo como Collaborator.]** ![alt text](4-1.JPG)
+> **[Imagen de Evidencia - Captura de pantalla de "Manage access" mostrando a PabloHuertasCastillo como Collaborator.]** ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/4.JPG)
 
 #### 2.2 Roles Probados y Justificación
 
@@ -24,4 +24,5 @@ Debido a las limitaciones de la interfaz en una cuenta personal de GitHub (no Or
 | :--- | :--- | :--- |
 | **Escritura (Write)** | **Collaborator** | Rol asignado. Permite al desarrollador hacer `push` a ramas y contribuir al código. |
 | **Lectura (Read)** | Invitación al Repositorio Privado. | Se considera el acceso de lectura, que es el mínimo necesario para que el compañero pueda ver y clonar el código del repositorio privado. |
-| **Administrador (Admin)** | Captura de **Transfer ownership** en Danger Zone. | Este nivel de control total solo se puede simular mediante la transferencia de la propiedad, siendo el Propietario (yo) el único Administrador. | ![alt text](5-1.JPG) ![alt text](6-1.JPG)
+
+| **Administrador (Admin)** | Captura de **Transfer ownership** en Danger Zone. | Este nivel de control total solo se puede simular mediante la transferencia de la propiedad, siendo el Propietario (yo) el único Administrador. | ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/5.JPG) ![alt text](file:///I:/DAW/ConfigurarSeguridadRepo/6.JPG)
