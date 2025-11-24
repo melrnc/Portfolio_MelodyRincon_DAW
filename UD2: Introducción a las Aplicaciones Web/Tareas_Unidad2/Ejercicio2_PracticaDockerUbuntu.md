@@ -26,13 +26,24 @@ A continuación, se muestra el escritorio de Ubuntu-DAW2DAW una vez completada l
 
 **Docker** utiliza **contenedores**, unidades de software que empaquetan código, dependencias y configuraciones necesarias para ejecutar una aplicación, compartiendo el *kernel* del sistema operativo, lo que los hace **más ligeros y rápidos** que las VMs.
 
-#### 2.1 Comandos de Instalación
+#### 2.1 Comandos de Instalación (Fase por Fase)
 
-Los siguientes pasos y comandos se ejecutaron para configurar el repositorio e instalar Docker Desktop:
+Se documentan los pasos completos de instalación de Docker:
 
-1.  **Actualización de Repositorios:** `sudo apt update && sudo apt upgrade -y`.
-2.  **Instalación de Dependencias:** `sudo apt install ca-certificates curl gnupg -y`.
-3.  **Adición del Repositorio e Instalación:** Se añadió el repositorio de Docker y se procedió a la instalación.
+1.  **Instalación de Dependencias:**
+    *Comando de instalación de dependencias:* `sudo apt install ca-certificates curl gnupg -y`
+
+    ![3](https://github.com/user-attachments/assets/e8e40466-2aa6-4d91-a25f-c32c7b2f75f4)
+
+2.  **Adición del Repositorio de Docker:**
+    *Comando para añadir el repositorio de Docker:* Se ejecuta el comando para configurar la clave GPG y el repositorio, y se actualizan los repositorios.
+
+    ![4](https://github.com/user-attachments/assets/eb7ac48f-a85b-4a35-af64-60f96cf2ca31)
+
+3.  **Instalación de Docker Desktop:**
+    *Comando de instalación:* `sudo apt install docker-desktop -y`
+
+    ![5](https://github.com/user-attachments/assets/6e19d6a3-f82b-4bfa-b658-cd8d3b9603e9)
 
 #### 2.2 Verificación de Funcionamiento
 
@@ -46,14 +57,19 @@ Se desplegaron un **Servidor Web** (Nginx) y un **Servidor de Aplicaciones** (To
 
 #### 3.1 Despliegue de Contenedores
 
-* **Servidor Web (Nginx):**
-    ```bash
-    docker run -d -p 8080:80 --name webserver nginx
-    ```
-* **Servidor de Aplicaciones (Tomcat):**
-    ```bash
-    docker run -d -p 8081:8080 --name appserver tomcat
-    ```
+* **Nginx (Servidor Web):** Se buscó la imagen y se ejecutó el contenedor.
+    *Búsqueda:* `docker search nginx`
+    ![7](https://github.com/user-attachments/assets/9941b302-4f0e-4f73-911e-70b627d95120)
+
+    *Ejecución:* `docker run -d -p 8080:80 --name webserver nginx`
+    ![9](https://github.com/user-attachments/assets/0f74e64a-ff6c-4f4b-807e-685bfe5a0ebe)
+
+* **Tomcat (Servidor de Aplicaciones):** Se buscó la imagen y se ejecutó el contenedor.
+    *Búsqueda:* `docker search tomcat`
+    ![8](https://github.com/user-attachments/assets/7f85bf11-9089-4ce6-aa83-ee07b01efa45)
+
+    *Ejecución:* `docker run -d -p 8081:8080 --name appserver tomcat`
+    ![10](https://github.com/user-attachments/assets/2bfec6cf-a80e-4bea-88e3-890ec42ed87c)
 
 #### 3.2 Verificación de Contenedores y Pruebas de Funcionamiento
 
@@ -98,6 +114,7 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
 
 
 
