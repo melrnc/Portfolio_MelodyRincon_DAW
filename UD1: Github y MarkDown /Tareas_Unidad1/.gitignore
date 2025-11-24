@@ -1,0 +1,43 @@
+###############################
+# Archivo .gitignore para Proyecto Web JavaScript/API de Spotify
+###############################
+
+# 1. SECRETOS Y CREDENCIALES (¡La parte más crítica!)
+# NUNCA subir: Client ID, Client Secret, y claves de acceso.
+.env
+.env.local
+.env.development
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# 2. ARTEFACTOS GENERADOS Y DEPENDENCIAS
+# Carpetas y archivos generados que se pueden restaurar automáticamente.
+
+# Dependencias de Node.js (se restauran con 'npm install')
+/node_modules
+
+# Carpetas de compilación o bundling (si usas Webpack, Vite, etc.)
+/dist
+/build
+/out
+
+# Archivos de logs y debugging
+npm-debug.log*
+yarn-debug.log*
+*.log
+*.tmp
+
+# 3. CONFIGURACIONES LOCALES DEL ENTORNO
+# Configuraciones específicas del editor/IDE que no deben compartirse.
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+
+# Sistemas operativos
+.DS_Store    # macOS
+Thumbs.db    # Windows
