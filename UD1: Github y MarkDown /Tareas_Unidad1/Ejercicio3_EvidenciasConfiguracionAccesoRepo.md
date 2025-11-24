@@ -12,7 +12,7 @@ El archivo `.gitignore` se colocó en la raíz del proyecto e incluye patrones e
 
 A continuación, se muestra una captura de pantalla del contenido del archivo `.gitignore` en Visual Studio Code, justo antes de ser confirmado:
 
-![Configuración del .gitignore en VS Code](https://github.com/user-attachments/assets/b6a8a476-d184-48f8-b808-7279178f99e4)
+![1](https://github.com/user-attachments/assets/f00d5173-692f-43d3-8b34-a59152f9a60e)
 
 #### 1.2 Justificación de la Exclusión en `SECURITY.md`
 
@@ -53,6 +53,7 @@ Debido a las limitaciones de la interfaz en una cuenta personal de GitHub (no Or
 | **Administrador (Admin)** | Captura de **Transfer ownership** en Danger Zone. | Este nivel de control total solo se puede simular mediante la transferencia de la propiedad, siendo el Propietario (yo) el único Administrador. | 
 > ![5](https://github.com/user-attachments/assets/46ffefb6-668a-4119-86f3-fb4ce5771f0e)
 > ![6](https://github.com/user-attachments/assets/b60fbe55-fae8-4908-8308-27b4ea015ebd)
+
 
 
 
