@@ -10,7 +10,7 @@ A continuación se muestra una tabla con los enlaces al diario de trabajo y a la
 
 | Unidad 2: Introducción a las Aplicaciones Web|                             
 |---|
-|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/diario_UD1.md)  |
+|[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD2:%20Introducci%C3%B3n%20a%20las%20Aplicaciones%20Web/diario_UD2.md)  |
 |[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD1%3A%20Github%20y%20MarkDown%20/enlaces_UD1.md) |
 
 | Unidad 3: Apache|                                              
