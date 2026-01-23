@@ -2,58 +2,84 @@
 
 ## 1. Relación de Actividades Realizadas
 
-En este apartado se detalla el proceso técnico seguido para la puesta en marcha del servidor, basándome en la documentación oficial de Ubuntu.
+En esta fase se ha procedido a la configuración técnica del servidor siguiendo la documentación oficial de Ubuntu.
 
-### 1.1. Instalación y Overview
+### 1.1. Instalación del servidor
 
-Se han seguido los pasos iniciales para instalar Apache2 en el sistema Ubuntu, verificando que el servicio esté activo y respondiendo correctamente a las peticiones locales.
+Se instaló el paquete `apache2` y se verificó que el servicio estuviera activo.
 
-### 1.2. Página Web Personalizada
+* **Comandos usados**:
+```bash
+sudo apt update
+sudo apt install apache2
 
-Antes de avanzar con configuraciones complejas, se ha creado un archivo `index.html` sencillo. He buscado darle un **toque personal** para diferenciarlo de la página por defecto de Apache, demostrando así la capacidad de servir contenido propio de forma rápida.
+```
 
-### 1.3. Control de Acceso y Configuración Avanzada
 
-Una vez que el servidor base estaba funcionando, he buscado un tutorial complementario en Google para implementar **control de acceso**. Esto permite restringir quién puede ver ciertas partes de la web, añadiendo una primera capa de gestión administrativa al servidor.
 
-> 
-> **Nota:** (Insertar captura de pantalla de mi terminal instalando Apache o de mi página personalizada).
-> 
-> 
+> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/1.JPG]**
+
+### 1.2. Creación del sitio web personalizado
+
+Siguiendo el paso 3 del tutorial, he creado un directorio específico para el proyecto y un archivo `index.html` con un toque personalizado por mí: Melody Rincón.
+
+* **Comandos usados**:
+```bash
+sudo mkdir /var/www/mi_primera_web/
+sudo nano /var/www/mi_primera_web/index.html
+
+```
+
+
+
+> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/2.JPG]**
+
+### 1.3. Configuración del VirtualHost
+
+Para que el servidor reconozca la nueva carpeta, se editó el archivo de configuración, añadiendo el correo de administrador y la ruta del sitio.
+
+* **Comandos usados**:
+```bash
+cd /etc/apache2/sites-available/
+sudo cp 000-default.conf mi_primera_web.conf
+sudo nano mi_primera_web.conf
+
+```
+
+
+* **Directivas clave configuradas**:
+* `ServerAdmin`: melodyabengozar@gmail.com
+* `DocumentRoot`: `/var/www/mi_primera_web/`
+* `ServerName`: `mi_primera_web.local`
+
+
+
+> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/3.JPG]**
 
 ---
 
-## 2. Banco de Pruebas y Detección de Errores
+## 2. Banco de Pruebas y Problemas Surgidos
 
-Para asegurar que la configuración es sólida, se han realizado las siguientes comprobaciones:
+Se han realizado pruebas sistemáticas para informar de los resultados obtenidos.
 
-* 
-**Pruebas de errores**: Se han revisado los logs y realizado pruebas manuales para detectar fallos en la carga de la página o en los permisos de los archivos.
+### 2.1. Resolución de incidencias
 
+Durante el desarrollo surgieron los siguientes problemas:
 
-* 
-**Validación externa**: He solicitado a un compañero que intente acceder a mi servidor desde su equipo.
+* **Error de sintaxis**: Se detectó un fallo en la directiva `ServerName` mediante el comando `apache2ctl configtest`.
+* **Codificación de caracteres**: Las tildes no se mostraban correctamente, error que se solucionó añadiendo la etiqueta meta UTF-8 en el HTML.
+* **Nombre de archivo**: Se corrigió un error al guardar el archivo en nano que incluía caracteres especiales.
 
+### 2.2. Verificación final
 
-* 
-**Prueba de seguridad**: Se ha verificado si el sistema resiste accesos no autorizados según las reglas de control de acceso configuradas previamente.
+Tras activar el sitio con `sudo a2ensite mi_primera_web.conf` y reiniciar el servicio, se comprobó el acceso mediante el navegador.
 
-
-
----
-
-## 3. Resultados y Conclusión Inicial
-
-De forma impersonal, se puede determinar que el servidor Apache ha sido desplegado con éxito, logrando servir contenido personalizado y gestionando correctamente los permisos de acceso. Al comparar los resultados con otros compañeros, se observa que la estructura de directorios y la respuesta del servidor son consistentes con los estándares de la unidad.
-
-**Valoración personal**: Esta parte me ha parecido fundamental para entender cómo se pasa de una instalación "limpia" a un entorno mínimamente configurado. Aunque surgieron algunos problemas con los permisos de la carpeta `/var/www/html`, se solucionaron revisando la propiedad del usuario `www-data`.
+> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/4.JPG]**
 
 ---
 
-### Bibliografía (Enlaces consultados)
+## 3. Valoración de resultados
 
-* 
-*Tutorial oficial de Ubuntu: Install and Configure Apache*.
+Una vez finalizado el trabajo, se confirma que el servidor es capaz de servir contenido de forma independiente al sitio por defecto. Personalmente, esta práctica ha sido muy útil para comprender la gestión de directorios y la importancia de las pruebas de errores en la administración de sistemas.
 
-* (Añadir aquí el enlace del tutorial de control de acceso que busques en Google) .
-
+---
