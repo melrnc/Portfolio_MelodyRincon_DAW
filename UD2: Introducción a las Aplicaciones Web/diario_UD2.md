@@ -1,20 +1,30 @@
-# Diario de la asignatura Despliegue de Aplicaciones Web
+# Diario de Aprendizaje - Unidad 2: Virtualización y Contenedores
 
-## Unidad 2: Virtualización y Contenedores
+En esta unidad he explorado las tecnologías de aislamiento de procesos y sistemas, comparando la robustez de las **Máquinas Virtuales** frente a la agilidad y eficiencia de los **Contenedores Docker**.
 
 ## 1. Qué he aprendido
-He aprendido los conceptos fundamentales de la **virtualización** y la **contenedores**, y la diferencia práctica entre ellos.
-* **Virtualización (VM):** He aprendido a configurar y crear una Máquina Virtual con **VirtualBox** y a instalar un sistema operativo (Ubuntu). Entiendo que las VMs aíslan completamente los sistemas operativos, pero son más pesadas.
-* **Contenedores (Docker):** He aprendido a instalar la herramienta **Docker Desktop** en un sistema Linux. Lo más importante es cómo utilizar los comandos `docker run` para desplegar servicios esenciales (como **Nginx** como servidor web y **Tomcat** como servidor de aplicaciones) y mapear los puertos (`-p 8080:80`) para hacerlos accesibles. 
+
+A lo largo de las sesiones, he consolidado las bases del despliegue moderno de aplicaciones:
+
+* **Virtualización nativa (VM):** He aprendido a configurar entornos aislados mediante **VirtualBox**, gestionando la creación de máquinas virtuales e instalando sistemas operativos como Ubuntu desde cero.
+* **Tecnología de Contenedores:** Instalación y configuración de **Docker Desktop** en Linux, entendiendo el concepto de imagen y contenedor.
+* **Despliegue de servicios:** Uso de comandos esenciales como `docker run` para levantar servidores web (**Nginx**) y servidores de aplicaciones (**Tomcat**) de forma casi instantánea.
+* **Gestión de puertos:** Implementación del mapeo de puertos (`-p`) para permitir la comunicación entre la máquina anfitrión y los servicios aislados del contenedor.
 
 ## 2. Qué no entiendo
-A pesar de haberlo puesto en práctica, todavía me resulta confuso comprender por completo la **infraestructura de red** de Docker, especialmente cómo se maneja la comunicación interna entre contenedores y por qué es necesario el mapeo de puertos específico (`8080:8080` vs. `8080:80`). También me gustaría entender mejor cómo persisten los datos si un contenedor se elimina.
+
+* **Redes en Docker:** Me resulta complejo el funcionamiento interno de la infraestructura de red de Docker y cómo se gestiona la comunicación entre distintos contenedores (Bridge vs. Host).
+* **Mapeo de puertos:** Persisten dudas sobre la lógica del mapeo específico (por ejemplo, por qué usar `8080:80` en lugar de `8080:8080`) en ciertos escenarios de red.
+* **Persistencia:** Necesito clarificar los mecanismos de almacenamiento para evitar la pérdida de datos al eliminar un contenedor.
 
 ## 3. Qué es lo que más me ha gustado y qué es lo que menos
-* **Lo que más me ha gustado:** Descubrir la **rapidez y eficiencia** con la que Docker permite desplegar servicios. En pocos segundos, pude tener Nginx y Tomcat funcionando, algo que en una máquina virtual tradicional llevaría mucho más tiempo. La **portabilidad** es el punto más fuerte.
-* **Lo que menos me ha gustado:** El proceso inicial de **instalación de Docker en Linux** es bastante secuencial y dependiente de la configuración manual de repositorios y claves (`gpg`), lo que lo hace propenso a errores si se salta un paso.
+
+* **Lo que más:** La **rapidez y eficiencia** de Docker. Es sorprendente cómo en pocos segundos se pueden desplegar servicios complejos que antes requerían procesos largos de instalación. La **portabilidad** que ofrece es, sin duda, su mayor ventaja competitiva.
+* **Lo que menos:** La **instalación inicial en Linux**. El proceso de añadir repositorios, claves GPG y dependencias manuales es muy secuencial y riguroso; cualquier pequeño descuido en los pasos iniciales puede detener toda la instalación.
 
 ## 4. Qué más me gustaría saber relacionado con la Unidad
-Me gustaría profundizar en:
-* **Persistencia de Datos:** Cómo se utilizan los **volúmenes de Docker** para asegurar que los datos de una aplicación (ej. una base de datos) no se pierdan cuando el contenedor se reinicia o se elimina.
-* **Docker Compose:** Aprender más sobre el despliegue de múltiples servicios (como un servidor web, una aplicación y una base de datos) utilizando un único archivo de configuración (`docker-compose.yml`).
+
+* **Persistencia de Datos:** Profundizar en el uso de **volúmenes de Docker** para garantizar que los datos (como bases de datos) sobrevivan al ciclo de vida del contenedor.
+* **Orquestación básica (Docker Compose):** Aprender a utilizar archivos `docker-compose.yml` para desplegar infraestructuras completas (web + app + BD) con un solo comando.
+
+---
