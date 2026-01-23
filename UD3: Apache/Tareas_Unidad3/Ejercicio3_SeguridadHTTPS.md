@@ -45,7 +45,8 @@ sudo systemctl restart apache2
 
 ```
 
-> **📸 CAPTURA 1:** Terminal confirmando que el módulo `ssl` se ha habilitado y el servicio se ha reiniciado.
+> ![1](https://github.com/user-attachments/assets/719a065c-4ff7-4f52-86f0-f81f3185d804)
+
 
 ### Paso 2: Generar el Certificado y la Llave
 
@@ -58,7 +59,8 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 * **Importante:** Cuando te pregunte **"Common Name"**, pon la IP de tu servidor (`10.0.2.15`).
 
-> **📸 CAPTURA 2:** Proceso donde rellenas los datos (Country, City, etc.) en la terminal.
+> ![2](https://github.com/user-attachments/assets/8257792a-0258-4847-94b6-29b33a0f68b1)
+
 
 ### Paso 3: Configurar el VirtualHost Seguro
 
@@ -84,7 +86,8 @@ Dentro del archivo, pega este bloque (asegúrate de que el `DocumentRoot` coinci
 
 ```
 
-> **📸 CAPTURA 3:** Editor `nano` mostrando la configuración del puerto 443 y las rutas de los certificados.
+> ![3](https://github.com/user-attachments/assets/16114b10-f1de-4da1-b333-57074461f4c9)
+
 
 ### Paso 4: Activación final
 
@@ -96,7 +99,8 @@ sudo systemctl reload apache2
 
 ```
 
-> **📸 CAPTURA 4:** Confirmación de que el sitio SSL está activo en la terminal.
+> ![4](https://github.com/user-attachments/assets/9c661884-e7d7-4db6-a589-179f2d939e8b)
+
 
 ### Paso 5: El Banco de Pruebas
 
@@ -104,12 +108,25 @@ Abre el navegador en Ubuntu y escribe: `https://10.0.2.15`
 
 * **Aviso:** Te saldrá una advertencia de seguridad. Haz clic en **"Avanzado"** y luego en **"Aceptar el riesgo y continuar"**.
 
-> **📸 CAPTURA 5:** Mi web visualizándose con el protocolo **https://**.
+> ![5 1](https://github.com/user-attachments/assets/326b95f3-60f1-48d4-87f6-ffed6242368d)
+
+
+![5 2](https://github.com/user-attachments/assets/791ecc3c-fc44-47f3-9f52-4d54b9a13ffb)
 
 ---
 
 ## 3. Problemas surgidos y Conclusiones
 
-*(Añadir aquí si tuve que corregir alguna ruta o el aviso del navegador).*
+### 3.1. Problemas surgidos
+A diferencia del ejercicio anterior, la configuración del VirtualHost para el puerto 443 fue fluida. No obstante, se detectaron los siguientes puntos a tener en cuenta:
+
+Advertencia de Seguridad en el Navegador: Al acceder mediante https://, el navegador mostró un mensaje de advertencia indicando que la conexión no era privada. Esto no se debe a un error de configuración, sino a que estamos utilizando un certificado autofirmado que no está validado por una Autoridad de Certificación (CA) reconocida.
+
+Persistencia del puerto 80: Se observó que si se entra por http:// (sin la S), la web sigue cargando de forma no segura. Para una implementación real, lo ideal sería configurar una redirección permanente (301) hacia HTTPS.
+
+### 3.2. Conclusiones y Valoración Personal
+La realización de esta práctica ha sido fundamental para comprender el ciclo de vida de un certificado SSL/TLS, desde su generación con openssl hasta su implementación en Apache.
+
+Como futura desarrolladora web, considero imprescindible dominar estos conceptos, ya que hoy en día la seguridad no es una opción, sino un estándar (impulsado por el posicionamiento SEO y la protección de datos). Me ha resultado especialmente satisfactorio ver cómo, tras habilitar el puerto 443 y los módulos correspondientes, la web pasa a estar cifrada, garantizando la integridad de la información que viaja entre el cliente y mi servidor Ubuntu.
 
 ---
