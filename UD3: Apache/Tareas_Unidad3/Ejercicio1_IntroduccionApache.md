@@ -1,4 +1,4 @@
-# Práctica 1: Introducción al Servidor Web Apache
+# Ejercicio 1: Introducción al Servidor Web Apache
 
 ## 1. Resumen
 En esta primera fase del proyecto se establece la base teórica y el contexto necesario para el despliegue de un servidor web. Se analiza qué es Apache HTTP Server, su importancia histórica en el desarrollo de la web moderna y por qué sigue siendo una de las opciones más robustas para entornos Linux. Además, se definen los objetivos del proyecto y se comparan diversas alternativas existentes en el mercado actual para entender mejor el ecosistema de servidores web.
