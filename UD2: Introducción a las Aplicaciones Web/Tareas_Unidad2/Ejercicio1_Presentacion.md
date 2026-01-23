@@ -1,4 +1,4 @@
-# Actividad 1. Presentación: Explorando la Web
+# Ejercicio 1. Presentación: Explorando la Web
 
 Esta presentación ha sido desarrollada de forma colaborativa junto con las alumnas **Aroa Ramos** y **Beatriz Gutiérrez**. En ella se analizan los pilares que sostienen el funcionamiento de cualquier sitio web actual.
 
