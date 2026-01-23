@@ -17,7 +17,7 @@ sudo apt install apache2
 
 
 
-> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/1.JPG]**
+> ![1](https://github.com/user-attachments/assets/c100febf-4323-408c-b92e-f06fecb17d10)
 
 ### 1.2. Creación del sitio web personalizado
 
@@ -32,7 +32,8 @@ sudo nano /var/www/mi_primera_web/index.html
 
 
 
-> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/2.JPG]**
+> ![2](https://github.com/user-attachments/assets/bd41f4fc-ff92-4b15-9816-6b4050a1202a)
+
 
 ### 1.3. Configuración del VirtualHost
 
@@ -54,7 +55,8 @@ sudo nano mi_primera_web.conf
 
 
 
-> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/3.JPG]**
+> ![3](https://github.com/user-attachments/assets/0efc3340-899b-4d91-b71b-917af0222cfe)
+
 
 ---
 
@@ -74,7 +76,8 @@ Durante el desarrollo surgieron los siguientes problemas:
 
 Tras activar el sitio con `sudo a2ensite mi_primera_web.conf` y reiniciar el servicio, se comprobó el acceso mediante el navegador.
 
-> **[file:///I:/DAW/UT3/Practica2_Apache_Configuracion/4.JPG]**
+> ![4](https://github.com/user-attachments/assets/3929ff9d-2998-4746-b7d2-25774985e37d)
+
 
 ---
 
