@@ -1,4 +1,4 @@
-## Informe Técnico: Iniciación a la Virtualización y Contenedores
+# Ejercicio 2. Informe Técnico: Iniciación a la Virtualización y Contenedores
 
 Este informe documenta el proceso de instalación de una Máquina Virtual con Ubuntu, la configuración de Docker Desktop y el despliegue de contenedores de servidor web y de aplicaciones, según las especificaciones de la práctica.
 
@@ -114,6 +114,7 @@ La implantación requiere:
 La seguridad y el mantenimiento son cruciales:
 * **Seguridad:** Asegurar el *host* y el aislamiento de los contenedores.
 * **Mantenimiento:** La **rapidez de despliegue** de Docker facilita las actualizaciones y el mantenimiento de las versiones de las imágenes.
+
 
 
 
