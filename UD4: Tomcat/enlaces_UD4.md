@@ -1,7 +1,7 @@
 | Actividades | Enlaces |
 | :---   |:---|
-| **Actividad 1. Tomcat: Investigación y descripción**|[Práctica Investigación_Tomcat](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD4:%20Tomcat/Tareas_Unidad4/Ejercicio1_Tomcat_Investigacion_Descripcion.md) 
-| **Actividad 2. Tomcat: Identificación de archivos de configuración**|[Práctica configuración Apache](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/Tareas_Unidad3/Ejercicio2_ConfiguracionApache.md)    |
+| **Actividad 1. Tomcat: Investigación y descripción**|[Práctica Investigación_Descripcion_Tomcat](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD4:%20Tomcat/Tareas_Unidad4/Ejercicio1_Tomcat_Investigacion_Descripcion.md) 
+| **Actividad 2. Tomcat: Identificación de archivos de configuración**|[Práctica Identificar_Archivos_Configuracion](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD4:%20Tomcat/Tareas_Unidad4/Ejercicio2_Identificar_Archivos_Configuracion.md)    |
 | **Actividad 3. Tomcat: Despliegue simple de una aplicación web**|[Práctica_Seguridad HTTPS.md](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/Tareas_Unidad3/Ejercicio3_SeguridadHTTPS.md)    |
 | **Actividad 4. Tomcat: Integración Tomcat + Servidor web**|[Práctica_Seguridad HTTPS.md](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/Tareas_Unidad3/Ejercicio3_SeguridadHTTPS.md)    |
 | **Actividad 5. Tomcat: Configuración de seguridad en Tomcat**|[Práctica_Seguridad HTTPS.md](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/Tareas_Unidad3/Ejercicio3_SeguridadHTTPS.md)    |
