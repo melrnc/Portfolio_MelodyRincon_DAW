@@ -1,37 +1,59 @@
-# Ejercicio 2. Instalación y Archivos de Configuración
+# Ejercicio 2. Instalación de Tomcat 10 y Análisis de Archivos Clave
 
-Antes de analizar las entrañas de Tomcat, he realizado la instalación en mi máquina virtual Ubuntu. A diferencia de Apache, Tomcat requiere un entorno de ejecución de Java (JRE/JDK).
+Para abordar esta tarea, he decidido realizar una instalación manual de Apache Tomcat 10 en mi máquina virtual Ubuntu. Esto me ha permitido no solo localizar los archivos de configuración que pide el enunciado, sino entender cómo interactúan con el sistema operativo.
 
-### 🛠️ Paso previo: Instalación y Verificación
-Para que Tomcat funcione, primero he instalado OpenJDK y luego he descargado el paquete de Tomcat 10.
+## 1. Proceso de Instalación y Configuración
 
-> ![1](https://github.com/user-attachments/assets/13f4c400-13df-4b89-b14c-a7d1eae67852)
+### 🛠️ Paso 1: Entorno Java
+Tomcat requiere el Java Development Kit (JDK). He instalado la versión por defecto y verificado su funcionamiento.
 
----
+> ![1](https://github.com/user-attachments/assets/8c4baeb3-a0eb-4774-bac6-f42afa1a8df2)
 
-### 📂 Archivos Clave de Configuración
-Una vez instalado en `/opt/tomcat` (o la ruta correspondiente), he localizado los cuatro archivos que controlan todo el servidor en la carpeta `/conf`:
+### 📂 Paso 2: Despliegue y Permisos
+He descargado el binario de Tomcat 10.1.34, lo he extraído en `/opt/tomcat` y he configurado un usuario específico para el servicio por seguridad.
 
-1.  **server.xml:** Es el archivo principal. Aquí configuramos los **conectores** (por qué puerto escucha, como el 8080) y los **Hosts Virtuales**. Si queremos cambiar el puerto, es aquí.
-2.  **web.xml:** Configuración global para todas las aplicaciones. Define cosas como los **servlets por defecto** o los tiempos de espera de las sesiones (session-timeout).
-3.  **tomcat-users.xml:** Este es vital para nosotros. Aquí es donde **creamos los usuarios y asignamos roles** (como `manager-gui`) para poder entrar al panel de control.
-4.  **context.xml:** Define configuraciones que afectan a las aplicaciones web, como el acceso a bases de datos (recursos JNDI) o parámetros que queremos que compartan todas las apps.
+> ![2](https://github.com/user-attachments/assets/18e424ab-5ab0-4b1a-9224-4808649a4996)
 
----
+### ⚙️ Paso 3: Creación del Servicio (Systemd)
+Para que Tomcat arranque automáticamente, he creado el archivo de unidad en `/etc/systemd/system/tomcat.service`.
 
-### 🗺️ Mapa Visual de Dependencias
-Para entender cómo se relacionan entre ellos, he diseñado este esquema de jerarquía:
+![3](https://github.com/user-attachments/assets/69afeac2-c458-4b05-bffe-65f3a43f0a17)
 
-* **server.xml (El Jefe)**
-    * Contiene el motor (Catalina).
-    * Dentro de él vive el **context.xml** (que define cómo se portan las apps).
-    * **web.xml** actúa como el manual de instrucciones para cualquier app que el motor decida arrancar.
-    * **tomcat-users.xml** es el portero que decide quién entra a las apps de gestión definidas en el motor.
+### 🚀 Paso 4: Arranque y Verificación
+Finalmente, he recargado el demonio de sistema y arrancado el motor de aplicaciones.
+
+> ![4](https://github.com/user-attachments/assets/9fb5a0f0-1175-4412-a834-5f14fd7066b1)
 
 ---
 
-### 📝 Resumen del proceso de localización
-He comprobado las rutas mediante el comando `ls -l /opt/tomcat/conf`. Es importante recordar que para editar cualquiera de estos archivos necesitamos permisos de superusuario (`sudo`), ya que una mala configuración aquí puede impedir que el servidor arranque.
+## 2. Archivos Clave de Configuración
 
-> <img width="683" height="480" alt="image" src="https://github.com/user-attachments/assets/e38be9bf-9e3e-4068-a979-3e095d743f9c" />
+Una vez el servidor está operativo, he localizado en la carpeta `/opt/tomcat/conf` los cuatro archivos fundamentales que solicita la actividad:
 
+> ![5](https://github.com/user-attachments/assets/442f2704-182b-4d65-aef0-d3167d60a32b)
+
+| Archivo | Función Principal | Elementos Configurables |
+| :--- | :--- | :--- |
+| **server.xml** | El archivo "maestro". Configura el motor del servidor. | Puertos (8080), conectores, Hosts Virtuales y protocolos. |
+| **web.xml** | Configuración global para todas las apps web. | Servlets por defecto, tipos MIME y tiempos de expiración de sesión. |
+| **tomcat-users.xml** | Gestión de seguridad y accesos. | Definición de usuarios, contraseñas y roles (manager, admin). |
+| **context.xml** | Parámetros comunes a las aplicaciones. | Conexiones a bases de datos (JNDI) y recarga automática de apps. |
+
+---
+
+## 3. Mapa Visual de Dependencias
+
+Para comprender cómo se relacionan estos archivos, he diseñado la siguiente jerarquía de funcionamiento:
+
+1.  **server.xml** actúa como el contenedor raíz: define el puerto donde escucha **Coyote**.
+2.  Al recibir una petición, **Catalina** consulta el **web.xml** para saber cómo procesar los servlets básicos.
+3.  Si la petición es para una app de gestión, **tomcat-users.xml** valida si el usuario tiene permiso.
+4.  **context.xml** proporciona a las aplicaciones los recursos externos necesarios para su ejecución.
+
+---
+
+## 4. Comprobación Final
+
+Como prueba definitiva de que la arquitectura y los conectores funcionan, accedo a la interfaz web por el puerto 8080.
+
+> <img width="619" height="513" alt="image" src="https://github.com/user-attachments/assets/89f344e1-319c-44f0-99e1-906609eb00a7" />
