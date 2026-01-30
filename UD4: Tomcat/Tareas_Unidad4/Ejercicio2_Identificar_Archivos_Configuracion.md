@@ -33,4 +33,5 @@ Para entender cómo se relacionan entre ellos, he diseñado este esquema de jera
 ### 📝 Resumen del proceso de localización
 He comprobado las rutas mediante el comando `ls -l /opt/tomcat/conf`. Es importante recordar que para editar cualquiera de estos archivos necesitamos permisos de superusuario (`sudo`), ya que una mala configuración aquí puede impedir que el servidor arranque.
 
-> **📸 CAPTURA 2:** Un `ls` de la carpeta `conf` para demostrar que he localizado los archivos físicamente en el servidor.
+> <img width="683" height="480" alt="image" src="https://github.com/user-attachments/assets/e38be9bf-9e3e-4068-a979-3e095d743f9c" />
+
