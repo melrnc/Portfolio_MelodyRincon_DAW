@@ -43,12 +43,18 @@ Una vez el servidor está operativo, he localizado en la carpeta `/opt/tomcat/co
 
 ## 3. Mapa Visual de Dependencias
 
-Para comprender cómo se relacionan estos archivos, he diseñado la siguiente jerarquía de funcionamiento:
+Para cumplir con el análisis de dependencias, he diseñado el siguiente esquema jerárquico. En Tomcat, la configuración no es aislada, sino que los archivos dependen unos de otros para que el flujo de datos sea posible:
 
-1.  **server.xml** actúa como el contenedor raíz: define el puerto donde escucha **Coyote**.
-2.  Al recibir una petición, **Catalina** consulta el **web.xml** para saber cómo procesar los servlets básicos.
-3.  Si la petición es para una app de gestión, **tomcat-users.xml** valida si el usuario tiene permiso.
-4.  **context.xml** proporciona a las aplicaciones los recursos externos necesarios para su ejecución.
+* **[server.xml] → La Raíz (Cimiento)**
+    * Es el nivel superior. Define el "Engine" (Catalina) y el puerto de escucha de "Coyote". Sin este archivo, el servidor no existe para la red.
+* **[context.xml] → El Entorno (Configuración compartida)**
+    * Se sitúa jerárquicamente bajo el servidor. Define parámetros y recursos (como BD) que las aplicaciones heredarán. Depende de que el servidor lo cargue al arrancar.
+* **[web.xml] → El Estándar (Lógica)**
+    * Establece las reglas de procesamiento para los Servlets. Depende de que el motor (server.xml) le pase las peticiones HTTP interceptadas.
+* **[tomcat-users.xml] → El Control (Seguridad)**
+    * Es la capa de acceso. Aunque el motor funcione, si los roles no están aquí vinculados a las aplicaciones de gestión, el acceso queda bloqueado.
+
+> **Esquema de flujo de dependencia:** > Petición HTTP ⮕ **server.xml** (Acepta) ⮕ **web.xml** (Procesa) ⮕ **tomcat-users.xml** (Autoriza) ⮕ Aplicación.
 
 ---
 
