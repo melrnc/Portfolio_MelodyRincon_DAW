@@ -5,7 +5,7 @@ Antes de analizar las entrañas de Tomcat, he realizado la instalación en mi m�
 ### 🛠️ Paso previo: Instalación y Verificación
 Para que Tomcat funcione, primero he instalado OpenJDK y luego he descargado el paquete de Tomcat 10.
 
-> **📸 CAPTURA 1:** Terminal ejecutando `java -version` y el estado del servicio con `sudo systemctl status tomcat`.
+> ![1](https://github.com/user-attachments/assets/13f4c400-13df-4b89-b14c-a7d1eae67852)
 
 ---
 
