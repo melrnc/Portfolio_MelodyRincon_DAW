@@ -7,8 +7,7 @@ La primera línea de defensa ha consistido en restringir el acceso a las herrami
 
 > **📸 CAPTURA 1:** Definición de la política de seguridad y usuarios en `tomcat-users.xml`.
 >
-> ![1](https://github.com/user-attachments/assets/7f5d136f-47bc-4563-9f19-fed674d5df06)
-
+> ![1](https://github.com/user-attachments/assets/5f02bdbd-2c91-4171-bcd3-c2b59f40350a)
 
 ### 🔑 2. Cifrado de la Comunicación (Implementación de SSL/TLS)
 Para proteger la **confidencialidad** de las credenciales, he configurado un certificado digital (Keystore) generado mediante `keytool`. Posteriormente, he habilitado un conector seguro en el puerto **8443** dentro de `server.xml`, asegurando que toda la comunicación entre el cliente y el servidor viaje cifrada bajo el protocolo HTTPS.
