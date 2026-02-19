@@ -1,4 +1,4 @@
-# Tarea 5. Hardening: Configuración de Seguridad y Autenticación en Tomcat
+# Ejercicio 5. Hardening: Configuración de Seguridad y Autenticación en Tomcat
 
 En esta fase final, he realizado un proceso de **hardening** sobre el servidor para blindar el acceso administrativo y garantizar la confidencialidad de los datos transmitidos.
 
