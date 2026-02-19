@@ -1,4 +1,4 @@
-# Tarea 7. Pruebas de Funcionamiento y Rendimiento
+# Ejercicio 7. Pruebas de Funcionamiento y Rendimiento
 
 En esta fase final, he sometido al servidor a pruebas de estrés para evaluar su comportamiento bajo carga y he aplicado ajustes técnicos en el pool de hilos para optimizar la capacidad de respuesta.
 
