@@ -1,4 +1,4 @@
-# Tarea 8. Despliegue de Tomcat mediante Contenedores (Docker)
+# Ejercicio 8. Despliegue de Tomcat mediante Contenedores (Docker)
 
 En esta fase se explora la modernización del despliegue utilizando contenedores, comparando la portabilidad y eficiencia de Docker frente a la instalación nativa realizada anteriormente.
 
