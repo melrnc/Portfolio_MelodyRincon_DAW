@@ -1,4 +1,4 @@
-# Tarea 6. Herramientas de Administración: Manager y Host Manager
+# Ejercicio 6. Herramientas de Administración: Manager y Host Manager
 
 En esta sección se exploran y documentan las dos interfaces gráficas de administración que proporciona Apache Tomcat, las cuales permiten gestionar el servidor de forma dinámica sin editar archivos de configuración manualmente.
 
