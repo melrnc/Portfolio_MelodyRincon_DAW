@@ -1,4 +1,4 @@
-# Tarea 8. Despliegue de Tomcat mediante Contenedores (Docker)
+# Ejercicio 8. Despliegue de Tomcat mediante Contenedores (Docker)
 
 En esta fase final de la unidad, se ha migrado la infraestructura de un modelo de instalación nativa a un modelo de **contenedorización**. El objetivo es aprovechar las ventajas de aislamiento, portabilidad y escalabilidad que ofrece Docker en los entornos de despliegue modernos.
 
