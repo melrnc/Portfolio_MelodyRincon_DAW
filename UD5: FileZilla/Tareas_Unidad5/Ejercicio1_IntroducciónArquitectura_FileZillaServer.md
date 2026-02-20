@@ -1,4 +1,4 @@
-# Ejercicio 1: Introducción y Arquitectura de FileZilla Server
+# Ejercicio 1. Introducción y Arquitectura de FileZilla Server
 
 Esta actividad establece la base teórica necesaria para la implementación de un servidor de transferencia de archivos, analizando protocolos, arquitectura de red y gestión de puertos.
 
