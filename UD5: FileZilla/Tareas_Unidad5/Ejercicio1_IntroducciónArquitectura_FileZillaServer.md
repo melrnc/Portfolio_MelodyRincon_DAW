@@ -84,7 +84,3 @@ La arquitectura de **FileZilla Server** requiere una gestión precisa y diferenc
 * **Separación de Canales:** La independencia entre el canal de control y el de datos es la base de la seguridad y eficiencia del protocolo FTP.
 * **Superioridad del Modo Pasivo:** La configuración del Modo Pasivo, junto con un rango de puertos específicos, será la clave técnica para garantizar que el servidor sea accesible desde redes externas, superando las restricciones típicas de los firewalls y el NAT.
 * **Seguridad:** Aunque el protocolo base es FTP, la arquitectura estudiada permite la evolución hacia **FTPS**, aprovechando certificados SSL/TLS para proteger la fase de autenticación y transferencia.
-
-```¿Vamos a por la instalación?
-
-```
