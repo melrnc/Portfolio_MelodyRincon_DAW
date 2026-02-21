@@ -16,7 +16,7 @@ A continuación se muestra una tabla con los enlaces al diario de trabajo y a la
 | Unidad 3: Apache|                                              
 |---|
 |[Diario](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/diario_UD3.md)  |
-|[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/tree/main/UD3%3A%20Apache/Tareas_Unidad3) |
+|[Actividades](https://github.com/melrnc/Portfolio_MelodyRincon_DAW/blob/main/UD3%3A%20Apache/enlaces_UD3.md) |
 
 | Unidad 4: Tomcat|                                              
 |---|
