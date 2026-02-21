@@ -1,4 +1,4 @@
-# Actividad 9: Uso del navegador como cliente FTP
+# Ejercicio 9: Uso del navegador como cliente FTP
 
 En esta actividad se analiza el comportamiento del servidor cuando se utiliza un navegador web como cliente de acceso, comparando su eficacia frente a aplicaciones dedicadas.
 
@@ -16,8 +16,9 @@ Se ha utilizado el navegador para acceder a la dirección `ftp://127.0.0.1/`. Co
 ## 📝 3. Conclusión técnica
 El navegador es un cliente útil únicamente para la **distribución pasiva** de información. Sin embargo, para tareas de administración, mantenimiento o transferencia segura de archivos (bidireccionalidad), es totalmente insuficiente, siendo necesario recurrir a clientes profesionales.
 
-> **📸 CAPTURA 9.1: Acceso desde navegador y registro de sesión anónima en el log**
+> **📸 CAPTURA 1: Interfaz del navegador mostrando el directorio FTP
 >
 > ![1](https://github.com/user-attachments/assets/092ee1f3-8d2d-420c-a3de-9b114c82c5f3)
 >
+> 📸 CAPTURA 2: Registro de la sesión anónima en el log del servidor
 > ![2](https://github.com/user-attachments/assets/d9ab3735-dd88-4c9a-bda4-85db4ab6f908)
